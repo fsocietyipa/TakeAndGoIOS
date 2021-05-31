@@ -26,6 +26,7 @@ class CartVC: UIViewController {
         setupConstraints()
         setDelegates()
         setViewModel()
+        setActions()
     }
     
     func setDelegates() {
