@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             window = UIWindow(frame:UIScreen.main.bounds)
             window?.makeKeyAndVisible()
-            let nc = UINavigationController(rootViewController: MainVC())
+            let nc = UINavigationController(rootViewController: CartVC())
             self.window?.rootViewController = nc
         }
             return true

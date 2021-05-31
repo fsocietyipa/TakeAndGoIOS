@@ -3,27 +3,45 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E27A63B2541A36800A2928D /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E27A63A2541A36800A2928D /* CartView.swift */; };
+		4E27A63F2541A5C500A2928D /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E27A63E2541A5C500A2928D /* CartCell.swift */; };
+		4E27A6422541B44600A2928D /* CartCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E27A6412541B44600A2928D /* CartCellViewModel.swift */; };
 		4ED440A72541997D00D78062 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED440A62541997D00D78062 /* AppDelegate.swift */; };
 		4ED440A92541997D00D78062 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED440A82541997D00D78062 /* SceneDelegate.swift */; };
-		4ED440AB2541997D00D78062 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED440AA2541997D00D78062 /* ViewController.swift */; };
-		4ED440AE2541997D00D78062 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ED440AC2541997D00D78062 /* Main.storyboard */; };
+		4ED440AB2541997D00D78062 /* CartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED440AA2541997D00D78062 /* CartVC.swift */; };
 		4ED440B02541997F00D78062 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ED440AF2541997F00D78062 /* Assets.xcassets */; };
 		4ED440B32541997F00D78062 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ED440B12541997F00D78062 /* LaunchScreen.storyboard */; };
+		4ED440BF25419A2600D78062 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 4ED440BE25419A2600D78062 /* SocketIO */; };
+		4ED440C725419B2C00D78062 /* Anchor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED440C625419B2C00D78062 /* Anchor+Extension.swift */; };
+		4ED440CB25419B9200D78062 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4ED440CA25419B9200D78062 /* RxSwift */; };
+		4ED440CD25419B9200D78062 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 4ED440CC25419B9200D78062 /* RxCocoa */; };
+		4ED440CF25419B9200D78062 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 4ED440CE25419B9200D78062 /* RxRelay */; };
+		4ED440D225419BA700D78062 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED440D125419BA700D78062 /* CartViewModel.swift */; };
+		4ED440DA25419C4C00D78062 /* CartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED440D925419C4C00D78062 /* CartData.swift */; };
+		4ED440E025419E1600D78062 /* Decodable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED440DF25419E1600D78062 /* Decodable+Extension.swift */; };
+		4EEE26DA26653EBC00F3B6B1 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEE26D926653EBC00F3B6B1 /* UITextField+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E27A63A2541A36800A2928D /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		4E27A63E2541A5C500A2928D /* CartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
+		4E27A6412541B44600A2928D /* CartCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCellViewModel.swift; sourceTree = "<group>"; };
 		4ED440A32541997D00D78062 /* TakeAndGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeAndGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ED440A62541997D00D78062 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4ED440A82541997D00D78062 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4ED440AA2541997D00D78062 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4ED440AD2541997D00D78062 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4ED440AA2541997D00D78062 /* CartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartVC.swift; sourceTree = "<group>"; };
 		4ED440AF2541997F00D78062 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4ED440B22541997F00D78062 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4ED440B42541997F00D78062 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4ED440C625419B2C00D78062 /* Anchor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Anchor+Extension.swift"; sourceTree = "<group>"; };
+		4ED440D125419BA700D78062 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
+		4ED440D925419C4C00D78062 /* CartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartData.swift; sourceTree = "<group>"; };
+		4ED440DF25419E1600D78062 /* Decodable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decodable+Extension.swift"; sourceTree = "<group>"; };
+		4EEE26D926653EBC00F3B6B1 /* UITextField+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +49,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ED440CD25419B9200D78062 /* RxCocoa in Frameworks */,
+				4ED440CB25419B9200D78062 /* RxSwift in Frameworks */,
+				4ED440CF25419B9200D78062 /* RxRelay in Frameworks */,
+				4ED440BF25419A2600D78062 /* SocketIO in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +78,62 @@
 		4ED440A52541997D00D78062 /* TakeAndGo */ = {
 			isa = PBXGroup;
 			children = (
+				4ED440C425419B0D00D78062 /* CartVC */,
+				4ED440C525419B1A00D78062 /* Extensions */,
+				4ED440C325419AF000D78062 /* Supporting files */,
+			);
+			path = TakeAndGo;
+			sourceTree = "<group>";
+		};
+		4ED440C325419AF000D78062 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
 				4ED440A62541997D00D78062 /* AppDelegate.swift */,
 				4ED440A82541997D00D78062 /* SceneDelegate.swift */,
-				4ED440AA2541997D00D78062 /* ViewController.swift */,
-				4ED440AC2541997D00D78062 /* Main.storyboard */,
 				4ED440AF2541997F00D78062 /* Assets.xcassets */,
 				4ED440B12541997F00D78062 /* LaunchScreen.storyboard */,
 				4ED440B42541997F00D78062 /* Info.plist */,
 			);
-			path = TakeAndGo;
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		4ED440C425419B0D00D78062 /* CartVC */ = {
+			isa = PBXGroup;
+			children = (
+				4ED440D825419C4200D78062 /* Model */,
+				4ED440D725419C3800D78062 /* View */,
+				4ED440AA2541997D00D78062 /* CartVC.swift */,
+				4ED440D125419BA700D78062 /* CartViewModel.swift */,
+			);
+			path = CartVC;
+			sourceTree = "<group>";
+		};
+		4ED440C525419B1A00D78062 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4ED440C625419B2C00D78062 /* Anchor+Extension.swift */,
+				4ED440DF25419E1600D78062 /* Decodable+Extension.swift */,
+				4EEE26D926653EBC00F3B6B1 /* UITextField+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4ED440D725419C3800D78062 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4E27A63A2541A36800A2928D /* CartView.swift */,
+				4E27A63E2541A5C500A2928D /* CartCell.swift */,
+				4E27A6412541B44600A2928D /* CartCellViewModel.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4ED440D825419C4200D78062 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4ED440D925419C4C00D78062 /* CartData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +152,12 @@
 			dependencies = (
 			);
 			name = TakeAndGo;
+			packageProductDependencies = (
+				4ED440BE25419A2600D78062 /* SocketIO */,
+				4ED440CA25419B9200D78062 /* RxSwift */,
+				4ED440CC25419B9200D78062 /* RxCocoa */,
+				4ED440CE25419B9200D78062 /* RxRelay */,
+			);
 			productName = TakeAndGo;
 			productReference = 4ED440A32541997D00D78062 /* TakeAndGo.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +185,10 @@
 				Base,
 			);
 			mainGroup = 4ED4409A2541997D00D78062;
+			packageReferences = (
+				4ED440BD25419A2600D78062 /* XCRemoteSwiftPackageReference "socket" */,
+				4ED440C925419B9200D78062 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 4ED440A42541997D00D78062 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,7 +205,6 @@
 			files = (
 				4ED440B32541997F00D78062 /* LaunchScreen.storyboard in Resources */,
 				4ED440B02541997F00D78062 /* Assets.xcassets in Resources */,
-				4ED440AE2541997D00D78062 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +215,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4ED440AB2541997D00D78062 /* ViewController.swift in Sources */,
+				4ED440D225419BA700D78062 /* CartViewModel.swift in Sources */,
+				4ED440E025419E1600D78062 /* Decodable+Extension.swift in Sources */,
+				4ED440DA25419C4C00D78062 /* CartData.swift in Sources */,
+				4ED440C725419B2C00D78062 /* Anchor+Extension.swift in Sources */,
+				4E27A6422541B44600A2928D /* CartCellViewModel.swift in Sources */,
+				4ED440AB2541997D00D78062 /* CartVC.swift in Sources */,
+				4EEE26DA26653EBC00F3B6B1 /* UITextField+Extension.swift in Sources */,
 				4ED440A72541997D00D78062 /* AppDelegate.swift in Sources */,
+				4E27A63B2541A36800A2928D /* CartView.swift in Sources */,
+				4E27A63F2541A5C500A2928D /* CartCell.swift in Sources */,
 				4ED440A92541997D00D78062 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,14 +232,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4ED440AC2541997D00D78062 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4ED440AD2541997D00D78062 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4ED440B12541997F00D78062 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,8 +365,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 86R6TV7GW4;
-				INFOPLIST_FILE = TakeAndGo/Info.plist;
+				DEVELOPMENT_TEAM = 5PEZBR6WHA;
+				INFOPLIST_FILE = "TakeAndGo/Supporting files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,8 +385,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 86R6TV7GW4;
-				INFOPLIST_FILE = TakeAndGo/Info.plist;
+				DEVELOPMENT_TEAM = 5PEZBR6WHA;
+				INFOPLIST_FILE = "TakeAndGo/Supporting files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,6 +421,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4ED440BD25419A2600D78062 /* XCRemoteSwiftPackageReference "socket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socketio/socket.io-client-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.2.0;
+			};
+		};
+		4ED440C925419B9200D78062 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4ED440BE25419A2600D78062 /* SocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4ED440BD25419A2600D78062 /* XCRemoteSwiftPackageReference "socket" */;
+			productName = SocketIO;
+		};
+		4ED440CA25419B9200D78062 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4ED440C925419B9200D78062 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		4ED440CC25419B9200D78062 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4ED440C925419B9200D78062 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		4ED440CE25419B9200D78062 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4ED440C925419B9200D78062 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4ED4409B2541997D00D78062 /* Project object */;
 }
