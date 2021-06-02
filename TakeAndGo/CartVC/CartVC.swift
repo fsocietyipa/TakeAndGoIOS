@@ -50,7 +50,7 @@ class CartVC: UIViewController {
     
     @objc func connectPressed() {
         guard let ipAddress = cartView.ipAddressTF.text else { return }
-        viewModel.connectToSocket(ipAddress: ipAddress)
+//        viewModel.connectToSocket(ipAddress: ipAddress)
     }
     
     func setupViews() {

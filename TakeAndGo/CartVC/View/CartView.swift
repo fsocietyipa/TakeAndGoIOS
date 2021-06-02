@@ -12,6 +12,7 @@ class CartView: UIView {
     let ipAddressTF: UITextField = {
         let tf = UITextField()
         tf.placeholder = "write ip address"
+        tf.text = "192.168.1.175"
         tf.autocorrectionType = .no
         tf.keyboardType = .decimalPad
         tf.setToolBar()

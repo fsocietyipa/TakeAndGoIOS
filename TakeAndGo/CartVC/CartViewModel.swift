@@ -12,7 +12,6 @@ import SocketIO
 
 class CartViewModel {
     
-    var socket: SocketIOClient?
     
     let _cartData = BehaviorRelay<CartData?>(value: nil)
     let _totalPrice = BehaviorRelay<Int?>(value: nil)
@@ -30,28 +29,43 @@ class CartViewModel {
         return crtDat.count
     }
     
-    init() {
+    let manager = SocketManager(socketURL: URL(string: "http://192.168.1.175")!, config: [.log(false), .compress])
+    var socket: SocketIOClient? = nil
 
-    }
-    
-    func connectToSocket(ipAddress: String) {
-        let manager = SocketManager(socketURL: URL(string: "http://\(ipAddress)")!, config: [.log(false)])
-        socket = manager.defaultSocket
+    // MARK: - Life Cycle
+    init() {
+        setupSocket()
+        setupSocketEvents()
         socket?.connect()
-        getCartProducts()
     }
+
+    func stop() {
+        socket?.removeAllHandlers()
+    }
+
+    // MARK: - Socket Setups
+    func setupSocket() {
+        self.socket = manager.defaultSocket
+    }
+
     
-    func getCartProducts() {
-        self.socket?.on("ShoppingCart") { (data, ack) in
-            guard let dict = data.first as? [String: Any] else { return }
+    func setupSocketEvents() {
+
+        socket?.on(clientEvent: .connect) {data, ack in
+            print("connected")
+        }
+
+        socket?.on("cart") { (data, ack) in
+            guard let dict = data.first as? [[String: Any]] else { return }
             let resCart = try? CartData(from: dict)
             self._cartData.accept(resCart)
             if let resCart1 = resCart {
                 self._totalPrice.accept(resCart1.map{$0.itemPrice}.reduce(0, +))
             }
         }
+
     }
-    
+       
     func viewModelForCell(at index: Int) -> CartCellViewModel? {
         guard let crtDat = _cartData.value else { return nil }
         return CartCellViewModel(item: crtDat[index])
